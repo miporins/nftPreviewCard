@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  width: 360px;
+  box-shadow: 0 20px 10px 10px hsla(216, 45%, 9%, 0.5);
+}
+body main .container {
+  padding: 1.5rem;
+  line-height: 1.6rem;
+}
+body main .container .image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+body main .container .image .main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+body main .container .image .hover-image {
+  background-color: hsla(178, 100%, 50%, 0.4);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 98%;
+  opacity: 0;
+}
+body main .container .image .hover-image:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+body main .container h3 {
+  cursor: pointer;
+  display: inline;
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+}
+body main .container h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+body main .container .description {
+  padding-top: 1rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  opacity: 0.9;
+}
+body main .container .price-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+}
+body main .container .price-time .margin-icons {
+  margin-right: 7px;
+}
+body main .container .price-time .ethereum {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 16px;
+}
+body main .container .price-time .time {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
+body main .container hr {
+  height: 1px;
+  border: none;
+  background-color: hsl(215, 32%, 27%);
+}
+body main .container .creator {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+body main .container .creator img {
+  max-width: 35px;
+  margin-right: 15px;
+  border: solid 1px hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+body main .container .creator a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+body main .container .creator a:hover {
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=style.css.map */
